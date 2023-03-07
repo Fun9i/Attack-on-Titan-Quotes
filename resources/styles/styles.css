@@ -11,7 +11,7 @@ body {
 
 .header {
     background-color: #395B64;
-    border-bottom: 2px solid #696969;
+    border-bottom: 2px solid #2c3333;
     text-align: center;
     color: #E7F6F2;
 }
@@ -31,15 +31,32 @@ body {
     flex: 1;
 }
 
+.arrow_left, .arrow_right {
+    max-width: 124px;
+    max-height: 125px;
+}
+
+.buttons {
+    position: relative;
+    left: 40%;
+    top: 2rem;
+}
+
 .quote_box {
     width: 50%;
     height: 300px;
-    border: 2px solid dimgray;
-    margin: 9.375rem auto;
+    border: 2px solid #2c3333;
+    margin: 3rem auto;
+}
+
+#quote_copy {
+    position: relative;
+    left: 70.4%;
+    bottom: 3.5em;
 }
 
 .footer {
-    border-top: 1px solid #696969;
+    border-top: 1px solid #2c3333;
 }
 
 .footer_text {
