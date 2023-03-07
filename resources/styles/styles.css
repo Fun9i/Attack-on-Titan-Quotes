@@ -1,0 +1,48 @@
+body {
+    background-color: #E7F6F2;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #395B64;
+    border-bottom: 2px solid #696969;
+    text-align: center;
+    color: #E7F6F2;
+}
+
+.header_h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    margin: 10px auto 25px;
+}
+
+.header_logo {
+    width: 100%;
+    height: 350px;
+}
+
+.main {
+    flex: 1;
+}
+
+.quote_box {
+    width: 50%;
+    height: 300px;
+    border: 2px solid dimgray;
+    margin: 9.375rem auto;
+}
+
+.footer {
+    border-top: 1px solid #696969;
+}
+
+.footer_text {
+    text-align: center;
+    margin: 5px auto;
+}
