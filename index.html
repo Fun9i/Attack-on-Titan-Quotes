@@ -7,59 +7,63 @@
 		<link rel="stylesheet" href="resources/styles/styles.css" />
 		<link rel="shortcut icon" href="resources/hearticon.ico" type="image/x-icon" />
 		<!-- *Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Spectral:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Spectral:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Shingeki no Kyojin quotes</title>
 	</head>
 	<body>
 		<div class="container">
 			<header class="header">
-				<img class="header_logo" src="resources\img\AoT_logo_hell.png">
-                <h1 class="header_h1">Known quotes from the anime Attack on Titan</h1>
-            </header>
+				<img class="header_logo" src="resources\img\AoT_logo_hell.png" />
+				<h1 class="header_h1">Known quotes from the anime Attack on Titan</h1>
+			</header>
 			<main class="main">
-				<div class="buttons">
-					<button type="button" id="last_quote">
-						<img src="resources/icons/left-arrow.png" alt="arrow-left" class="arrow_left">
-					</button>
-					<button type="button" id="next_quote">
-						<img src="resources/icons/right-arrow.png" alt="arrow-right" class="arrow_right">
-					</button>
-				</div>
-				<div class="quote_box">
-					<p id="quote_text">“Give up on your dreams and die.<br><br> -Levi Ackerman”</p>
+				<div class="flex_container">
+					<div class="button">
+						<button type="button" id="next_quote" class="btn">Next Quote</button>
+					</div>
+					<div class="quote_box">
+						<p id="quote_text" class="quote_text">
+							“Give up on your dreams and die."<br /><br />
+							<span class="author">Levi Ackerman</span>
+						</p>
+					</div>
 				</div>
 				<button type="button" id="quote_copy">Copy Quote</button>
 			</main>
 			<footer class="footer">
 				<p class="footer_text">
-					This site was made by Muk @ Web.Titans. 
-                    <br />
-					<a href="https://animemotivation.com/attack-on-titan-quotes/" target="_blank">Quotes from animemotivation</a>
+					This site was made by Muk @ Web.Titans.
 					<br />
-					<a href="https://www.flaticon.com/free-icons/direction" title="direction icons">Direction icons created by NeXore88 - Flaticon</a>
+					<a href="https://animemotivation.com/attack-on-titan-quotes/" target="_blank">Quotes from animemotivation</a>
 				</p>
 			</footer>
-			<script>
-				var quotes = [
-					'"It Doesn\'t Matter How Strong The Opposition Is. It Doesn\'t Matter How Fearsome The World Is, It Doesn\'t Matter How Cruel The World Is. Fight!"<br><br>Eren Yeager',
-					'"If There Are Humans Who Can Bring About Change, They\'re Those Who Are Capable Of Abandoning Everything. People Who, When Required To Surpass Even Monsters, Are Capable Of Tossing Aside Their Very Humanity."<br><br>Armin Arlert',
-					'"I Don\'t Like The Terms "Good Person" or "Bad Person." It Is Impossible To Be Entirely Good To Everyone. To Some, You Are A Good Person, While To Others, You Are A Bad Person."<br><br>Armin Arlert',
-					'Miche Zacharius: "As Long As We Continue To Fight, We Are Not Defeated!"<br><br>Miche Zacharius',
-					'"If You Win, You Live. If You Lose, You Die. If You Don\'t Fight, You Can\'t Win!"<br><br>Eren Yeager',
-					'"You Understand, Don’t You? One Day Or Another, Everyone You Care About Eventually Dies. It\’s Something We Simply Can’t Accept. It’s A Realization That Could Drive You Insane."<br><br>Hange Zoë',
-					'"You\'re Gonna Care What Other People Think And Be Someone You\'re Not Your Whole Life? You’re Fine As You Are. So, Talk In Your Own Words."<br><br>Ymir',
-					'"Everyone Had To Be Drunk On Somethin’ To Keep Pushing On … Everyone Was A Slave To Somethin’."<br><br>Kenny Ackerman',
-					'"This World Is Cruel, And It’s Also Very Beautiful."<br><br>Mikasa Ackerman',
-					'"No One Knows What The Outcome Will Be. So, Choose Whatever You\'ll Regret The Least."<br><br>Levi Ackerman',
-				]
-				document.getElementById("next_quote").onclick = function(){
-					var quote = quotes[Math.floor(Math.random()*10)];
-					console.log(quote)
-					document.getElementById("quote_text").innerHTML = quote;
-				}
-			</script>
 		</div>
+		<script>
+			var quotes = [
+				"\"It Doesn't Matter How Strong The Opposition Is. It Doesn't Matter How Fearsome The World Is, It Doesn't Matter How Cruel The World Is. Fight!\"<br><br><span class=\"author\">Eren Yeager</,span>",
+				'"If There Are Humans Who Can Bring About Change, They\'re Those Who Are Capable Of Abandoning Everything. People Who, When Required To Surpass Even Monsters, Are Capable Of Tossing Aside Their Very Humanity."<br><br><span class="author">Armin Arlert</span>',
+				'"I Don\'t Like The Terms "Good Person" or "Bad Person." It Is Impossible To Be Entirely Good To Everyone. To Some, You Are A Good Person, While To Others, You Are A Bad Person."<br><br><span class="author">Armin Arlert</span>',
+				'Miche Zacharius: "As Long As We Continue To Fight, We Are Not Defeated!"<br><br><span class="author">Miche Zacharius</span>',
+				"\"If You Win, You Live. If You Lose, You Die. If You Don't Fight, You Can't Win!\"<br><br><span class=\"author\">Eren Yeager</span>",
+				'"You Understand, Don’t You? One Day Or Another, Everyone You Care About Eventually Dies. It\’s Something We Simply Can’t Accept. It’s A Realization That Could Drive You Insane."<br><br><span class="author">Hange Zoë</span>',
+				"\"You're Gonna Care What Other People Think And Be Someone You're Not Your Whole Life? You’re Fine As You Are. So, Talk In Your Own Words.\"<br><br><span class=\"author\">Ymir</span>",
+				'"Everyone Had To Be Drunk On Somethin’ To Keep Pushing On … Everyone Was A Slave To Somethin’."<br><br><span class="author">Kenny Ackerman</span>',
+				'"This World Is Cruel, And It’s Also Very Beautiful."<br><br><span class="author">Mikasa Ackerman</span>',
+				'"No One Knows What The Outcome Will Be. So, Choose Whatever You\'ll Regret The Least."<br><br><span class="author">Levi Ackerman</span>',
+			];
+			var quote;
+			document.getElementById("next_quote").onclick = function () {
+				quote = quotes[Math.floor(Math.random() * 10)];
+				next_quote = quotes[Math.floor(Math.random() * 10)];
+				console.log(quote);
+				document.getElementById("quote_text").innerHTML = quote;
+				return quote;
+			};
+		</script>
 	</body>
 </html>
